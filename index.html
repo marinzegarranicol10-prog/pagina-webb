@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>U.E. 25 de Mayo — Lista de Estudiantes</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --c1: #7B6CF6;
+    --c2: #0EBF8A;
+    --c3: #F26D3D;
+    --c4: #3A9BDC;
+    --c5: #D4527D;
+    --c6: #C78A1A;
+    --bg: #111111;
+    --surface: #1C1C1C;
+    --text: #F0F0F0;
+    --muted: #999999;
+    --border: rgba(255,255,255,0.1);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--bg);
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSExIVFRUXFRgYGBgXFxgXFxUaFxoXFhYVFxgYHSggGBolHRYVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0mHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAIDBQYBBwj/xABFEAACAQIEAwUFBQYFAgUFAAABAhEAAwQSITEFQVETImFxkQaBobHBFDJCUtEjYsLh8PFygpKisiSTFTNDU4MHY3PS4v/EABkBAAIDAQAAAAAAAAAAAAAAAAIDAAEEBf/EAC0RAAICAQMDAgUDBQAAAAAAAAABAhEDEiExBCJBUWETMnGx8COBoRQzQmKR/9oADAMBAAIRAxEAPwD0fFYWSTUAw8cq1V3Cq3KKDu8P6a1hyYGbsfUoG4Bbhm/w/WrPF4fNEcqh4fZysdOVH0/DHspmfLP9TUihbDEFpHT5VSY3D/8ATR+4PpW4ZZ3qtx3CgyFU00gA7etVPE/A3H1Fcnk/BcPD3v8A8T/NT9KsMNYqxXhTWrtwMpE229+2x50rVmKw5XTOlhladFt7N2ovIfP5EVqcbw9LgMjXr/XurN8DH7RfOtaDrWrpqcKfqc7q21kv2PO8Zw4hrwO5UE+51qqt4XWt5x7D94t+a23qI/lWYW3WTqVplRr6PJcQ72TXLfHirD4T9KxuMtR9oX8uIP8AGv8ACK2vAhF9PMj1BFZfjlnLiMasR31b1eflcpmJ3i/cj/v/ALL7lHbFajBjNw/Er+V7T+rBT8AazSLWo9nhmsYtOtgt/ok/Wpje9fU09Qu2/dfcyPOtFgbx+xYiN0ey4/zFrZPxFZ5hrV9wIZrWJTrh2b322V/oakOSZ12/8+4Dw7EFbiuTJDAz5Ga3+IxChntXNUzGDzSTow8Oorzi2da0XG+IsGQgfftWnk+KAHTzU0cZGXPiuSNFh77WGyOZQ/dYaiDsQenyq2co6lGgqw88pIjMPWsxw7Hr9nRbslC9xS27Ie6wYdR3zI6CnLjGw7i25lDqjDVSDsQelOi63Rhkq2ZPibZsv2b7HVW0AKyADM0x1qfFXrd22bTsBOtt9O4w2Bn8JP8AXTNcL4q63Dhr4OYGAx125dAumldbo817HL63BfcuS+tW9avbIAGlVuFsmQYqzWn5pWZOmhVsdThSApNpSDUzhpgArhNJTV0LsG4k+VGYAaCdefhQWBxqXJjSPiDsas8RtGmvI7HwjnXl+MxVy3cZASDJB5RuN+Y13pkOAJLc9INv+pNKqrDe0VkqpzHboRtptypVe5NMTe0qVKuYdQVKlSqEFSpUqhDL+0CntGg6EDT3RVStqtVxTCFjMcqqnwhFc7qMb1WdPp8iUaOcLWHX/EPnWqrMYVCGU9GHzrTU/pflZm6p3JMq+NjVR1Vx8Ky0VecZd+1WQcswDy1B51nVY1k6x3I1dFHYN4e8XUP76/MVU+0tk/bcTMwbQI8gttvmGo2w8EHoRRvtYv8A1VofmtXF/wBj/wD81fT742gs3bli/Ywws1c+zlsm4yj8Vtx56SR6A0HcSrH2YYDE2vEkf6gV+tBDdpGzM/039DJsKvvZDvXwn50uIf8AMjVUcUtZLtxPyuy+jEfSjfZe/kxNk/8A3FHuJCn502O0iZu7G69ABeVW/FdbOFfmbbp/27jR8HFV3EbeS7cT8rsv+liPpRuIacHbP5L7r7nRGHxQ+lReUVPfS/zg79qjCP8AuXrZ9zq6n4qnrUfCuMK1p7WIk2pUgjVrJYkF16iSsrz150LZtl7V9Z2sl469m6N8s1Ulu53bg622/wBkXP4KZB7GXLiT1BuKxr2mKFpX8LAyrDkynmDRf2gYu2tlyBcWeyc/in/0mPnsfd0rN2MXnQpc+6O8salMxAYjqD3ZFEd62QriQRKMPuuslcynmJB9K2Y5aWczJHwz0z2Q4y1wGxflby/m0LjQ+9oM6cta1KrXltvEPisrK2XFWk0YGDfVB1/9wKPeB51uvZjji4q1OguLo6+PUDofhW2MtSswzjp4L1VqK6a6DXCKtciW7IwKcFpypQuNu3UllQOANgTmPSP6/SisiVAvtDZZrLZSQwEiBJkdPGvJuI41nbMxUnWYEGTqdOX969H4p7U27ZytZY6d5XEbiYG8+n8vNuOXbD3Geyj2wT90sGE840kD135VG6QSjbAhi1/oUqCN2NJj1pUGsPSfR2H4wrb/AAo+3iFbY15Vh+K+NW2F40RzrlRzvydOWE9EpVlMJx/xq2w/GVO9OWWLFODRa0qht4pG2NTUy7AFUVywp3FS0qjSfJadARwPMUbSpUMYqPBbk3yVvHQezBBiGHyNZBrVbvFWc6xVFiuGkcqydVict0bekyxiqZQAUV7R4oG/hdSQWkHoGhWX4iprmDNTcT4MrW0uktKhWERodM0g8iQOYpGGLVj88otxZjbrcvdTsDcK3EI3zr8xTsTb7zEbZjHlNQ2tCD0M+nxNL8m7mAB7Rz9ouk7lpPm0MfnQuDvFWDdCD6a1c/8A1BtBcW5GzKrD3iPmDWatXIp7VMXCSlBP2L/2shcXejYtmH+cB5/3VFhrs4a8vQ2nHuJQn/eKB4neLMrEzNtPgIj3RFPwDyLqzGay/vKxcA8+5VPd2Wl2JelfwP4c5zFRu6XE886MsfGqbh7jOs7HunycZT8GNHcPvZbiMdg6k+QIJ+FA45BbvXEUyEuOoPUKxAPoBRwAyVZWYWYccyjD3qM4Hqoqbh98FQl4t2YbcalMwOqg+KyRz89alVAuI1+72k9e6Wn5Ghkw8LcQ7gfFGE/DNWqJz8kbLDhyXS6qksxIyFJJPQrGs/Gt5wzhOKW4l+3aZLv4wQUS4DuddBMajrBFZP2UxHZXbLRIDg+RVgZHuI86957OtcZOCOZlhqdFelswJEdR0p+SibyVAwJolKzNo0vcY1DXmbYKTPSAB6/zojJ41w4m2hGZgJnfTYST4Vd0GkZHHoLxNt7rTqSsNmBHKAkzodBpAnpWF9p+Ei1rae5dWJYi2QqbEAt1110A1r1L2t4KLts37UB0UkldCcuuYMNcwjT6HWvH+N40XCW1DtOYgmG8Y8Rv4+lC5Wg9NGde7rvSprATvXaXqQdG0DeYqRLpHOmBq5ArlUdgNtY9hRtji8c6pY6GmmenpVguKNhheOkc6ucJ7Q+NebC7HMipreMYc6JTaFvGj1zDccU7xVlaxaNsfWvHsPxcjnVthOPEc6bHM/ImWI9SmlWJwftH41d4bj6neKcssWLcGi7rkUPZxyNs1EA0y0wCC7g1PKPKmXLfcZCJAWPP01ouosRcyqT0odKW5epmCxeBImRrVLeXKa9O4jbQqSyZtOWh6b++snxLg6k/s7gnMy5HIV5XUieehB8jNY8nTtO0dHD1irTIyXtlie0Nh+YsKp3B7paCQfOs2hrQ+1GFZMgZSpEiDOu23UabiqG7lDKgVgcskmIJ5hY2Ag7+NVTNEZxSpE+NPctnwYeh2+PxrvDHHaKDsTlP+bu/WuYgTaHg5+ImhrDQQehqUM1bUK23I1FxE/tWP5ob/UAT8SafihluOP3j85Fd4kgi08/etkEdCrMvxGU0SQMpWCYte8D+ZFPoMh+KmpbxzX3J/wDUJY//ACrmP/Om4oSts/4l8oIb+I026dVP7o9QSPkBTomWZY8JOg8CPiNfkK934PiO0sWn5lFnzjX4zXhGDEM4G2seQOYfAV7L7EXc2FUH8JYfxfxVrbuBz8iqRcBJOtde1/QqUCu0OoUoLyZi9xbsrpBko3UEFNuvv+FP4zwgYoBrbjQd0jY9aseM8MW4pIENEyANfA1hzxG9hz3WICyI0jckgiNdafHdXHkzyTi6fAB7QPi8FIDMqnTMuaCNI8JgDxrBcUZG7w0JJkfGRA2308q9EHtRduKy37X2i3lJIyjQzAYkDbfWDEVjuM8NQTcS4N9UKlWUtqAZLKfMGPLahn7jIr0Mox8qVFwvNR/X+alSRhpg1dDVCGp6gmuadYfmpZ6EfEAGNa4MSOtFRVhhemQKg7Wl2lSiExnkfWuhyP5VBnrva1KKDLeLI50ZY4qw51U9rSzCpRVI1OF9oCOdW+F9qCPxV5/m8aRukfyq02gHjR6hb9tcv3gG+B9R+lHJ7WYW8pRmNskEaiR6j6xXjlzEnrURxRFMWSQp4ke53MS17DsEhiqAhlYMGZSDpBnWOcb1UX8QDi8y6g37Q/7lhxHge6K8rw/GLiGVdlPUEg+o1q+wnt5eEC6FvBWDDOIYEaBg6wZ8TNNWS+RbxvwbFrBu4q9YLSvaWSttwHUq6ftV1Hd0tuwgjWqdOC28QivlNrMspDBhDGMpkCCCUkbQdDQeA9sMP2jOM9l2VVJabywpcyGEPmPaNqQ1W1s23sXrdq4LloWL4VbRzsxd81k9n95WUMw8dPIX2srujwZjHcIdbTAd8Egqy6gwSGql+zspggg+Ira4XFtGHJMLGHkEEEO7fZ76MDuBntmCNyD0q/4tw20yrOHV5cIxEK6LO+YEEgCOZ8jQyxrwaIdU/wDI8nx4789Qp+AH0puJEoumoZvRgsf8T61fYvhK3Wi0WVxp2dxSDoq3PvgQDFwGDHwNVuLwb21ZLilWlSARvBjQ7Ed7lS3Bo1QzRmtgZ3X7Oykd4XUYHwy3FcevZ+lCN91T0Yj1A/Q0YMOWRh+6W/098/AGhcvcPhB+MfWriVNFjw/76+IA/hPyr1j2Eu/s2XyP0P0ryHCPGU+75EfWvSvYfE/tQv5gR6jMPlWuLtUc/Mt7N7SpUqEWKs57R8Ee8Cy5GPTLDacg3P31o6VEnQMoqSpnlWHx93DBlUAjow+6eZHQ6VXYu9hcQ03+1tHIASrSpMmfwk5ZIaDtG+1eqYzgdi6SzJqeYJB89OdYb2s9nLdv7hc8t0OpmFAkHkTOwFM1RYvTKJim9mmJm23aLyYG0A3IwC87zvXaEaws/eHx/SlVF37CF2osTi7myqQOuhJ/ShBiKd29cxI6zdjbdpvL1+VTqseNRdtXO1ogUkgnNSz0N2tLtKlF2E9pSz0L2tLtalEsL7Sl2lDduByPny9Bv8Kje4SZ/TbyG3qalEsN7Wl2tBKadnqUVYUblRtFQ9pXDcqEHsnjURU1w3qYbpobovTZwg0lvMpkEgjYjl5HlSIMTrHwoK5i+g9dKKMm+AJRUeTR4b2uxKlc7C6FYEC4A5BBBBzHvbgHfkK2XDvb+y0C7adAdysMBvrBgxr415lZtF1B5kehqK2CdyTRqZSw2eq8Mxq3HZrLpczXMwyOVdwWWc9u5tCIF0mAARG1WWOwZOIys0FggIEEnL2hc5W0MC2gBPWvLL2mGeNwyMPUr8mq29kfafEpcRWul7cgFXAcQdDBcEjflFM12hU8Li6RuOPcEso9u2bfZs6kFkOkwQe5tBBOgjUVk8fwF0dkVhc3AI0Lch3T4kaAncdat8N/9Q7b3AMTZIyQA1qCJVwxORzMGI+9sTRX2rC3bjdnfSVMqjHIwG0Q25ChIiZ3qUilkmjFWgQIIIIIkHQjlB6b1r/ZjG5Lltidis+QMH4VY8e4CqMqFZJXcc4J26aRVNZ4cVIyN7j+tNgDOaaPY6VVWC4whtIxPeyiR4xB+M0y7xwDYVdCXJIt5rtZPHcXZgIuZGnuwJBOmrR+HlrpVrw7iwuIG2OzL+VhuKvSVrLes37TcAF5SUVM5/E7sFUa6wOfp76ulxBNDcV4olm2ztJA8CZPkBVpNFtpnkmP4Bat3GQ4iSOaqWBkA6Eb712rXEe1losScFZefxZBr867R9wHaeWxXamNseVcNvxPwrnUdMizHrXO0NSdmKYyVdFDe1NLtjXCtMIqyEnb137RUFNJqECvtFL7QOtBs8b0w3RVFh5xI610YjoKDsWpP9eNdt4d2J1OUE/diTEiJJ028aG7dF0GBmO3wpxSCA2k9f6/rWui72agBVUc5Yk+Ow1NILcLNc2KhQABrBmZkmDqKpoYkPe3HOaeixqP68KeLcjPnzzqoIELOkkDePd9aCwd51vdnccEa8goEAEeoke6hcLI5UF3zmGUcxqeQ8POq58IdoqfE2mzEqO8pP8AmHLzorC4gMBmWDttoatXjVoTPvdMm4Za7g8JHxND3rEOw6MfnpVvgrWhHjPqB+lDcRtxcPiAfgAfiDQxle5oxqnRHlm269Ub5SPlVdgWykGrbDjUA89D8qqbSZSVO4JB92hpsWXkW47GH9vcI0BctHTN3o+NNxmtwH8yqfQZf4aK4taAa2wM57KMfAgtbI/2D1obF7Wzz7wPloR82o0xLgixxHHMQMRmS86qcjATKg5VzEKdB3g3Ki8D7WXRPaIrZdyvdO4Hl8Kor6f+W/UFfepn5MtIr32A1zCfeyyfQk+lHGVCZ4rPVPZ7iQv2swOUZiADvynaepoziGINlC7ISg3YfhnQeWpFed+zV66wCWjJzCFmJJ0EaRy59RV3d401uUvWyGVyCGnuzoZ0J5sZ5DrUeSW6ZklCmScS4rLsVbulVULB8zHkWYVYcJ4sLTgtOpBgfi0OWdZnXbyrCXMSh5wZk6fL41MeMEwJIjx2nQ6+EClpycrI1se4XsaUCZu7nKqo5y2w8/0qLGlY/aFI/fIj415Pj+NNcCZT2bL2anWNZc54JnTQE6nbrWgw2IsqwuXhcdVmc2ZlygwpzbGQCY3Eiedb4sQ2bFeH2mGYLaM6z3TPjNKm4G3hL6C6tlAHk6oJ3I/MOlKisG2eCdt4Vw4g9Ksf/Dn/APbb0bWo73DnAJNpgBzIaK5to61gBxPhTGxPhRaYPNMKTG8AmJ2pLwx2MLZuMfBWPloBV2imwA4jwrhu/wBDWn4zCkDVSDOxn61FheG3r7FLaM517q+AE/MetWVZG9/+xP0FQ3MSQJ8Y0MVIuBK6kEac4G4nTruKHvp3f830NSiamRnEnlA90n1NPtuWBkk6jf30xMMWYKokkwBPhP0qWzZIDT1X5NVuqLg3Za4YfIVPhGCl8xABaRJ3nkB7vjTcEu3+EfSq3ibd9wWYEEQANDoOc6HWkY1c2h2R1FMt8NdH34kkk6kDIoPd6xprFOs8QXMwkDM3XXRVWB6fGqI4tipBbQQAuXf3/Oh7d+QVImSDPMRO3rT1ATLK2zTdoouqoaASJnQHw8+VWD8EVnzE79QCR4a+/wBKx6XDOaT9QCI+RNei4YHIpYd4qJ8yBPxmlTWkKMtfJWYWGdhIhWIX3aelFYYgqGZcp5gjUGf5VTs/YOwmSPw777bHej+E8RDFw531A8P7zSMmNpX4GRmnt5LZEg+Yn0/vQPGU7ynqsehP60RhbgzgAmIYCTtqP0pcbWVQ+JHrH6UOMbF9xVpyqtviLjf4ifUzVkBQGPH7SeoB+n0rTALJ4DOIwcPYYASrXUY9dUuKT/rce6q68JTyI+o/SrIMGwlxdJW7bcdSCHtsB4aofdUXDsKLgdSY/ZXGHibaG4B78hFWnQFbFe/3R4H5jX5CkxgqfD5f3FS2rWYMP3Sf9PePwBqJxoPA/P8AsKKwWi59lOKnC3zcEAhXAJEgcwYNC8e4j2ri72mdmJDTJJjafiKrz97zH8vpUF4PbJXruAQQZ2OmnIH3UadmPNHcOwtpbiNJAfdTmAEL95YI1MGd/wAJgHnC9xSJ5gjvE6RBBJXc6xoOQ2M1FfxAAjssgaGUHMRlbURm1YbwZnxoa4DA1G076+XX+9WJoIuXMrEBpE6Ec+lWd7jd9kW27EKFUAEAFl0y96JYaAiaz6tofdz5bQPUelOXEEa/HWY2jyo1IBxN9hfbPE20VBiVAVQAOmm2+9KsGtzwpUetAaWew4HBOMpJYL1IMKfA7dDQT2y9yNcpBERAOh5V6pxJjlhVJMbxt5GsfxHAMk3GGgnUgTJBHLU785rNKCT4NcVauzzbh4ZM2sTE+6f1rX8HwzKhi4kTmVgCZnfcdJ/lVf7NYVXFxuzLgFNoOveOxPh/U1qLeCTLl28v689PGsfVZKWkpx7rPPfaXAlb4DQMwzCBAEBlUa6aZRWYwWNW2+V1OQtDFWK91gBBAjMJg69K2Xt7aBa2BImAcxkjVon3RpXnvELeV2EzBia09OtcE2E3pSLd8NbFpSHt5iqaCM5kANrM9TtVdxNLaxlMqCNoPJunOgMPGYTodfirfX51PfHcPmv8VNcaYadxLUX7dprVwWiFDb5d5RtpM+PuoC9iu0ZzEDu779OtBYnG3HVQzkgRA0gQCBt4U7Aj73+Ef8h+tVWxaluXuBUnKAY7snSdoHXxqY8IRmLNmYnxgdNgPrXeCrOvRQPUn9BVuFoYxrcKbt0YjjFsJeZFEARA33AJ38aZdZCIS3liZYsSSJ0nkNvjS43c/wCouf4iPTSj/Z18rtyLCAYBj3GnbpGdcg2DsHQcuZ+gqwfjV6PvQI9/vPWrHG2cwdy2wMeJ5VUcLwgvEKSfuk6dQdqS+7do0tRgkosjwshgx1J3nnz+dK7ie8CNKHNxiu3pyofNTI+5nl7Gq4LjQbqKTuSPVTWh4qk2/Ig/T61geFXst62elxf+QmvQ8Wv7Nh4T6a/Ss+WKUlRpwP1KEUFxHdfIj0P86Nmg+IbA+NSHJqnwctGVYdR8iD9KsPZ4Dt7QOxdVPk/cPwY0Bw1QzqpMZiBPSdPrRaAqfEfAipN+CoRtMgwFvJeVHgQ+R52AJyP8CaWCsqVuK2/ZMV8GSH+IRh76J9o4+1Xip0d+0H/ygXf46fZv5MQLhGmcMRuCr94jyKsfWqbKS2KW+Pun3fX9a6nCLzAuqEoNQRExMSI10O9FHD9xv3YPnBCn/kT7q0nspla0UYj7xWJgwwBEag7g1byqMbM2eNcmGy3F5QYIbnImTPhy06VHcw7DkB75I30PT+1ex4X2ds9lftsqAkrcQiDJ1ES3KDttqTWQ9pbNjDgsio0kqRnzC3mAERPPLI6QREGAUc8ZJV5MmkwtxYO308v1qa3ZJIaMw0MDvQJO4HlV/wAJ4gr3zdvBbkgBgyg7KFkdNemmuvhocZwbDu82nCuQSwJaNCe/3WBB1jXfSlz6lQlTRVGMOEtnUl1PMC1oPKTt0rlbN7dxTBtoYj5eIrtK/q/ywaPQeJ445U1OoJ3/AHjWfxuI0byPyq4xPD2ISXAyrB3PMnw61ScVtKiPFxHMHYd7Y9GIj3VulB8s1LJCqRF7Bk9ndgx3l57wDp8aseKYhrXfBbZBAVRlzltTO33InxrHcJvX+zZbTMveBJHgpgeuXelisNjXEF/CC4jQyPcNfWkTxNz1bCZPwC+0+JBgxPfmd5Mbk8z4+FY0YdrjE91e8SSxgTPLma0vEsG9tIuMCxcNpttH0qluN0rTiW5cvkQNfw6Wbgzt2iMmpQEEE7Rm5ggUkAZYadYOnhPXzqe6hgSM0beFNW2TqFPpUyvcZhW25AMPb/KT5t+gqRQoByqBOm5J3B5nwqUYdvyn0rpwz/lNLselFFxwFP2ZP70en9zVoq0Lwe3Fpeus+po0mBPSjSESe557jMLce87KjGXY7eNF4bh93XuH1UfWrHBEfCrBXqpZGiRxplQ/DsQwAMAeLfOKO4JhWssc5WSREHlz391FtdqI4qJiNACfjPwBoNblyHojHdHeE8PK22tswgzBjblr86gt+yg53vRI+bVYWmEmCCD02qxW5pS5SlF7BxjFrcqLPsvb37R/dlH0rTsQykfmB+Iqvs3hRthxA8NPSlSk3yMUUuDPkUJjl7p8KMxAhiOhI9CRQ+IXMrDqCPUUyPI+fyldhr2sg7GdOo1q3xd0G42+rFtd4bvD51msPbgqR/XhWmvWFa0tyYfKNI0YZihM8oim5IJMzYs7020R8TUns3P4rYH/AGybceir61x9lP7sf6THyy0Vw+yt1CG17NuRMjOJ9O4fU1pODYRVU5QYBE7n7wMHy7h9aU1SDeZeCtX2fuXIKgZbiggyB/5gBHoTHuNQ2La4cQ6ZwXUFcxQqyk6yJ2k71uFwzuihNIzKSQe7rmU7j8zelVHtLwHV7itlL3sxLP8Asu/mdshjeSInoRQJrdGfLkcjMYvHsxnM41KjeBG2s6iI9azGLsXGaTPemfcdZrX2QuY/s7hUmY0Oh0jfpPwp9rDrBLWrmUCSYWU5F9CY5enjVKWnwZmmYa0jLqARyqcrcGuuvPrW3u8HtEhyT1APQiOfKQfKk+DspEiRqTPgvT3fpQvqIvwBRlQcQdcx18R60q1oayABljTpPx60qX8X/UlI0rWg2otE+J1+MUDxOw/Zt3QJBAAI5gjrVtiuIAc6oOJcSmupyOoh4BgWVGmBLT97wHgasmsMPyerH6VRWeIEUrvET1qFMh9p7neG2ix3dOv61lFuKoIjfSrbiBLydABuWIAHvNUcg7VdUi1u0TriMo2pfb/3fj/KosRaKnIQZA10gAn8OvOmdnQySbsOCpUT/bv3fj/KmtjD+X4/yqIWqcLVDSDLHD8WZVCi1MACc+/j92u3eLOVI7MCQR96YkRO1C27VP7OisHSB2WI5CiBfboK72dPCUL3LSojNx+g+NctyHkjQgc+k/rRC26mt4NjsKiiW36kGEZlEaH1o5cY3RfQ/rXUwQG59KlCAbCi+FfIr4yXA2ziH3yr6fzohcYw/L6H9aiilkqfCiC88mcs2O1YntFUkkwR76L/APBG/Ovx/ShNqLwuOKqVyk6mNufnVPGg49RKqKXB4ZbV1kOsGNvfoK0fGU7TAWiqktbvuAQPwXVDkRy7yDfpWX4tebtcyuVmNJESBsOm3lTsPxO8VyZiBIkEBcxE/fJ8z60ckJTC+CsbbXO0DBHVQCFJIZGBEDSdCw3/ABVrlw4t2le3dDdoqPlKzsysAw7wXTMNfzaVmbfGmChMuVQQMgPdb8xZvvb66b01+IWCrK9kAicjWRGu8tn1I9wMUhxkxyaRt8R7RMFy27RUHfKATtE66AeAHOqyxfOVVFtgoHdUCAomYAGg16VivtXmPKrj2c4uLN9WL90FhqSZ0hWg7bmlvFSC1Gv4faUtluykKWggAmCAR1B1XccxR/FsSot5bIBI2GmUggqZ67/KsVieNrdftGG7AjLMrIVSpAJEEIpJjlE611rzNlIBnU6aczp8tf51nyRaoGU6J7mFaGAJCiY5kDbKOsAt6eEUKuHEgF5IY6a6xsCT5R76Ow1wZZnQaydNv6j1qLEdk2k9n4jkCJBM7jfWgToUzlm2YGg9zD/9TSqtbFIvdLSRodelKipg2XmKxU1U4i5NTXHoW5XQ1GtwIg1JmpRXGqWTQC39iOR3HIxqJoXsjR7ioSKllqIMbVLsqKFsUslQugYWq72cUSE6a1LbwzHYVCm0gRUp4t1YJgOpFECwo5etEoMVLNFFWmEY8qITAAb0dJppo1BLkS8snwRpbUbCnsxp2SugUf0Ft+rIslIrTi1cCzVE+hGTSymnMAPGort3qahYwkedR3bnL4VEzk6AVwW45CfP56VRdWNu4PMZJHoDHrTHIUgbjY6ARznTwBp9y6FiTy2quxbF99F+NUwki0yDl86iOGE86qheYbEjypjXnP4jQUxllw2B6Nr0O3rQ1+2UEsAfI0EMZcAiZ8xrSu4xysGI8t4qUyNontXodWZiAD+GJjwB51YHiSwIZ1kCVgEE/iI2yjQEDXzFZztcxJ22qQuetBJJi1IuL/EHZfvHf8sH166/GgjimEd46bfOhO1IrnaTVaEiNhX2tuortCa9KVTSgTcPUT12lUR0CE016VKoURg01qVKrINNSWxSpVZTDsKoO4nWijSpU2Bjz/MMprV2lTBHk6Nq6a5SoFyNfBxqYaVKjYpDOdTRpSpUtjfAM+9Q2hpPnXKVEwYjnoSdPWlSoRhUBjvPM/OnXKVKqkEiIimLvSpVCzjb0zF7/wBeFKlVAvgiakaVKgAOTXLddpVCHWYzXKVKoUz/2Q==');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--text);
+    min-height: 100vh;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.82);
+    z-index: 0;
+    pointer-events: none;
+  }
+  .site-header, main { position: relative; z-index: 1; }
+
+  /* ===== HEADER ===== */
+  .site-header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 2rem;
+    display: flex; align-items: center; gap: 1rem;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+  .logo {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--c1), var(--c4));
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-weight: 700; font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    flex-shrink: 0;
+  }
+  .site-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px; font-weight: 700; color: var(--text);
+    line-height: 1.1;
+  }
+  .site-header p { font-size: 12px; color: var(--muted); margin-top: 1px; }
+  .header-back {
+    margin-left: auto;
+    display: none;
+    align-items: center; gap: 6px;
+    background: none; border: 1.5px solid var(--border);
+    padding: 7px 16px; border-radius: 8px;
+    font-family: 'DM Sans', sans-serif; font-size: 13px;
+    cursor: pointer; color: var(--text); transition: all 0.15s;
+  }
+  .header-back:hover { background: var(--bg); border-color: rgba(0,0,0,0.15); }
+  .header-back.visible { display: flex; }
+
+  /* ===== MAIN ===== */
+  main { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+
+  /* ===== INICIO ===== */
+  #vista-inicio { animation: fadeIn 0.3s ease; }
+  .intro { margin-bottom: 2.5rem; }
+  .intro h2 { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 700; line-height: 1.2; }
+  .intro p { color: var(--muted); font-size: 15px; margin-top: 8px; font-weight: 300; }
+
+  .grado-bloque { margin-bottom: 2.5rem; }
+  .grado-label {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--muted);
+    margin-bottom: 12px; padding-left: 2px;
+  }
+  .cursos-fila { display: flex; gap: 14px; flex-wrap: wrap; }
+  .curso-card {
+    flex: 1; min-width: 140px; max-width: 200px;
+    background: var(--surface); border-radius: 16px;
+    border: 1px solid var(--border);
+    padding: 1.25rem 1.1rem 1rem;
+    cursor: pointer; transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+    position: relative; overflow: hidden;
+  }
+  .curso-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    border-radius: 16px 16px 0 0;
+  }
+  .curso-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border-color: rgba(0,0,0,0.12);
+  }
+  .curso-card:active { transform: translateY(-1px); }
+  .curso-card .nombre {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; font-weight: 700; line-height: 1;
+    margin-bottom: 6px;
+  }
+  .curso-card .cant {
+    font-size: 12px; color: var(--muted); font-weight: 300;
+  }
+  .curso-card .flecha {
+    position: absolute; bottom: 12px; right: 14px;
+    font-size: 16px; opacity: 0.3; transition: opacity 0.15s, transform 0.15s;
+  }
+  .curso-card:hover .flecha { opacity: 0.7; transform: translateX(3px); }
+
+  /* Colores por grado */
+  .g1 .curso-card::before { background: var(--c1); }
+  .g1 .curso-card .nombre { color: var(--c1); }
+  .g2 .curso-card::before { background: var(--c2); }
+  .g2 .curso-card .nombre { color: var(--c2); }
+  .g3 .curso-card::before { background: var(--c3); }
+  .g3 .curso-card .nombre { color: var(--c3); }
+  .g4 .curso-card::before { background: var(--c4); }
+  .g4 .curso-card .nombre { color: var(--c4); }
+  .g5 .curso-card::before { background: var(--c5); }
+  .g5 .curso-card .nombre { color: var(--c5); }
+  .g6 .curso-card::before { background: var(--c6); }
+  .g6 .curso-card .nombre { color: var(--c6); }
+
+  /* ===== DETALLE ===== */
+  #vista-detalle { display: none; animation: fadeIn 0.3s ease; }
+  .detalle-header { margin-bottom: 1.5rem; }
+  .detalle-header .curso-badge {
+    display: inline-block; padding: 4px 14px; border-radius: 20px;
+    font-size: 12px; font-weight: 500; margin-bottom: 10px;
+    letter-spacing: 0.04em;
+  }
+  .detalle-header h2 {
+    font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700;
+  }
+  .detalle-header .total { font-size: 14px; color: var(--muted); margin-top: 4px; font-weight: 300; }
+
+  .buscador-wrap { position: relative; margin-bottom: 1.25rem; }
+  .buscador-wrap svg {
+    position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+    width: 16px; height: 16px; color: var(--muted); pointer-events: none;
+  }
+  .buscador {
+    width: 100%; padding: 10px 14px 10px 40px;
+    border: 1.5px solid var(--border); border-radius: 10px;
+    font-family: 'DM Sans', sans-serif; font-size: 14px;
+    background: var(--surface); color: var(--text);
+    transition: border-color 0.15s; outline: none;
+  }
+  .buscador:focus { border-color: rgba(0,0,0,0.25); }
+  .buscador::placeholder { color: var(--muted); }
+
+  .tabla-wrap {
+    background: var(--surface); border-radius: 14px;
+    border: 1px solid var(--border); overflow: hidden;
+  }
+  .tabla-head {
+    display: grid; grid-template-columns: 50px 1fr;
+    padding: 10px 16px; background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    font-size: 11px; font-weight: 500; color: var(--muted);
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .alumno-row {
+    display: grid; grid-template-columns: 50px 1fr;
+    padding: 11px 16px; border-bottom: 1px solid var(--border);
+    transition: background 0.1s; align-items: center;
+  }
+  .alumno-row:last-child { border-bottom: none; }
+  .alumno-row:hover { background: var(--bg); }
+  .alumno-row .num { font-size: 12px; color: var(--muted); font-weight: 300; }
+  .alumno-row .nom { font-size: 14px; font-weight: 400; }
+  .sin-resultados {
+    padding: 2.5rem; text-align: center;
+    color: var(--muted); font-size: 14px; font-weight: 300;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer-total {
+    margin-top: 3rem; padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    text-align: center; font-size: 13px; color: var(--muted); font-weight: 300;
+  }
+
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+  @media (max-width: 600px) {
+    main { padding: 1.5rem 1rem 3rem; }
+    .cursos-fila { gap: 10px; }
+    .curso-card { min-width: 110px; }
+    .intro h2 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">25</div>
+  <div>
+    <h1>U.E. 25 de Mayo</h1>
+    <p>Lista de Estudiantes — Gestión 2025</p>
+  </div>
+  <button class="header-back" id="btn-volver" onclick="volverInicio()">
+    ← Volver al inicio
+  </button>
+</header>
+
+<main>
+  <!-- PANTALLA INICIO -->
+  <div id="vista-inicio">
+    <div class="intro">
+      <h2>U.E. 25 de Mayo</h2>
+      <p>Selecciona un curso para ver su lista completa de estudiantes.</p>
+    </div>
+
+    <div class="grado-bloque g1">
+      <div class="grado-label">Primero</div>
+      <div class="cursos-fila" id="fila-1"></div>
+    </div>
+    <div class="grado-bloque g2">
+      <div class="grado-label">Segundo</div>
+      <div class="cursos-fila" id="fila-2"></div>
+    </div>
+    <div class="grado-bloque g3">
+      <div class="grado-label">Tercero</div>
+      <div class="cursos-fila" id="fila-3"></div>
+    </div>
+    <div class="grado-bloque g4">
+      <div class="grado-label">Cuarto</div>
+      <div class="cursos-fila" id="fila-4"></div>
+    </div>
+    <div class="grado-bloque g5">
+      <div class="grado-label">Quinto</div>
+      <div class="cursos-fila" id="fila-5"></div>
+    </div>
+    <div class="grado-bloque g6">
+      <div class="grado-label">Sexto</div>
+      <div class="cursos-fila" id="fila-6"></div>
+    </div>
+
+    <div class="footer-total" id="total-global"></div>
+  </div>
+
+  <!-- PANTALLA DETALLE -->
+  <div id="vista-detalle">
+    <div class="detalle-header">
+      <div class="curso-badge" id="badge-curso"></div>
+      <h2 id="titulo-detalle"></h2>
+      <div class="total" id="total-detalle"></div>
+    </div>
+    <div class="buscador-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input class="buscador" type="text" id="buscador" placeholder="Buscar estudiante por nombre..." oninput="filtrar(this.value)">
+    </div>
+    <div class="tabla-wrap">
+      <div class="tabla-head"><span>#</span><span>Nombre completo</span></div>
+      <div id="lista-alumnos"></div>
+    </div>
+  </div>
+</main>
+
+<script>
+const datos = {
+  "1ro A": ["CACERES ARANCIBIA GAEL DULFREDO","CERON SANDOVAL JUAN DAVID","CUBA VARGAS ANA BELEN","FLORES BURGOS ALEX","FLORES NUÑEZ HEYDI ANABEL","LEON EGUEZ CAMILO","MARIN ESPINOZA KEIDY BELEN","MONTAÑO VELASQUEZ ALEX MATEO","OCHOA PAREDES WILLIAM","PADILLA CHURATA MARY PAZ","PADILLA CHURATA MARY LUZ","PAREDES VELA YAMIL","PAREDES YUCRA JHASMIN","REYNAGA ALVAREZ NATALIA NICOL","RODRIGUEZ SANCHEZ YOSELIN","ROJAS ALARCON LUCY MAR","SANDOVAL LEON WILLIAM","SEGARRA CACERES NEYDA LIZET","SEGOVIA VELA JOSE BRAYAN","SOLIZ GUIZADA ANTONY FABRICIO"],
+  "1ro B": ["AGUILAR LLAVE JUANA","ANDALUZ ARANCIBIA SOLANGE LAISA","CACERES MARIN DANIA","CACERES SEGARRA DEYSI ANAHI","CHOQUE CHILE DANIEL","FLORES GARCIA LEONEL","MARTINEZ RIVERA ROSSETE ANNE","MELENDRES PARAVICINI SAIR ARON","MELENDRES QUISPE JHON BRAYAN","MORALES VALLEJOS MARIANA DANITZA","PARACTA MAMANI DANA DALIS","RIVERA LOPEZ LIDIA MISHEL","SAAVEDRA PAREDES ANABEL","SEGARRA FLORES JHAMIL","SERRUDO DELGADILLO ADRIAN HENRRY","TELLES ARENAS MARCO JHOSEP","VARGAS AGUILAR ALEX MATIAS","VIRGO MASABI ABRIL","YAMPARA VARGAS YHOSELIN","ZELAYA MELENDRES FAVIANA"],
+  "1ro C": ["OCHOA VANIA","ALVIS ESPINOZA JOSE FAUSTINO","ARANCIBIA CABEZAS ROSMERI","ARRATIA ALARCON JUAN DAVID","BARRIGA FLORES SILVIA","LLAVETA PAREDES JUAN CARLOS","LLAVETA PAREDES ARMINDA","MERCADO FLORES MARIO","MERCADO VARGAS DIEGO","QUISPE ESTRADA JIMENA","RIVERA VELA LUCIANA MONSERRAT","RODRIGUEZ ARAMAYO MATIAS ADRIANO","ROJAS IBARRA ELIEZER","RONZA ALVAREZ LOURDES","SEGARRA SERRANO SERGIO LUIS","VARGAS PAREDES CARMEN LIZ","VELA VARGAS ALEXSANDER","YUCRA URQUIZU EFRAIN"],
+  "2do A": ["MOSCOSO ANDY EYNER","BARRIGA ESTRADA VICTOR","CABRERA FLORES JUAN CARLOS","CHAVEZ FLORES LUIS MIGUEL","ESTRADA GARCIA JUAN DAVID","GALARZA MENDEZ LEYDY","GUERRERO VARGAS SOLEDAD SOFIA","GUERRERO VARGAS OSCAR VLADIMIR","LEON VELASQUEZ JHAMILEY ADRIANA","MARTINEZ RIVERA BABBETE JARETH","MELENDRES MERCADO SANDRA","ORTIZ PACO NOELIA","PAREDES ALDANA DIEGO","RIVERA OCHOA DALIA","SARDAN SANDOVAL DANNA CELESTE","VELASQUEZ MEDINA SELENA","VELASQUEZ MEDINA WILSON NOLBERTO","VILLA BARJA EDSON DANIEL","YALE CAYO ROMINA SCARLETH"],
+  "2do B": ["ESPINOZA ANA YELI","ARAMAYO ARANCIBIA MARY LUCY","CACERES QUISPE SAIDA","CACERES URQUIZU JHON BEYCA","CERON GODOY JOSE","ESPINOZA CACERES JHOEL CARLOS","ESPINOZA URQUIZU ARELIS JAZMIN","FERNANDEZ HERRERA YOSELIN","MAMANI PACO ALEX","PAREDES CESPEDES JOSE SANTOS","PECHO SANTOS DAMARIS EUGENIA","RENGIPO SERRUDO JHOEL SEGUNDINO","RODAS CACERES JHONNY JOSUE","RONZA AZURDUY LUIS DAVID","ROSSO SALAZAR KEYDENT SAORI","SANDOVAL AGUILAR DANIEL","TELLEZ QUISPE NANCY ANJHELINE","VARGAS SANDOVAL THIAGO ALEXIS","ZARATE SEGARRA ERLINDA"],
+  "2do C": ["VARGAS ROBERTO","ARISPE CARBALLO JUAN PABLO","BARRIGA MERCADO DELIA","CARRASCO ZARATE MAYNER","CASTRO SANDOVAL ROLANDO","ESTRADA GARCIA LUIS MARIO","GARCIA LOAYZA RUBEN","GONZALES CABRERA NELIDA","PINTO LOAYZA ARMANDO","PINTO LOAYZA ARIEL","QUISPE FLORES ANGHELI JULIT","QUISPE MASABI LUIS MARIO","RONZA AZURDUY NELSY","STROEBEL CACERES GONZALO JHUNIOR","TANGO PARACTA ERLINDA","TARDIO VELA WILBER","VARGAS ZARATE NEYDA","YAMPA CARRASCO ELIZABETH","ZARATE PACO ERIKA"],
+  "3ro A": ["AGUILAR LLAVE MARIA DEL CARMEN","BARRIGA FLORES SONIA BELISA","CAVERO MOSCOSO ERVIN FABRICIO","CHOQUE CESPEDES DARLEN ANAHI","CLEMENTE DIAZ AYLEN ANIA","FLORES GARCIA LUIS FERNANDO","FLORES VILLCA MARISOL","GALARZA ESTRADA SANDRA","GALARZA MAMANI JHOSELIN","GARCIA PAREDES ELIZABETH","GUTIERREZ FLORES MATEO BENJAMIN","GUTIERREZ TINUCO DEYVID ARTURO","GUZMAN TELLEZ MARCO ANTONIO","JIMENEZ ARAMAYO HERNAN","LEON EGUEZ GILBERTO","LOPEZ NAVARRO MARIA MAGDALENA","MELENDRES MERCADO ANA","NAVA ROCHA MARCO ANTONIO","OCHOA MIRANDA SONIA","PADILLA LOPEZ ALEJANDRO","PAIVA RISUEÑO NEYMAR","PARACTA ESQUIVEL YHAMIL","QUISPE MALDONADO MARIBEL","RODAS SALAZAR EDWARD","ROQUE SANCHEZ NELIDA","TARDIO VELA SILVIA","TORRES CAYO MILDRED","VELA COANQUI IVAN","VELA CONDORI HERNAN","VELA FERNANDEZ CLIVER","YAMPARA PACO MAHILY","YUCRA MIRANDA MICHELLE","ZARATE RONSA JHAMIL","ZEGARRA FERRUFINO KAREN JHAZMIN"],
+  "3ro B": ["ALVARADO ALAN RENE","RONZA FERNANDA MAYTE","SALAZAR IVER ADAEL","VELA ALCIDES","ALCIBIA HIGUERAS ALEX","ARANCIBIA ARAMAYO JOSE","BORDA VARGAS ELISABETH","CARDENAS SANDOVAL MAYBER REINALDO","CASTILLO CONTRERAS KEVIN EDWIN","CAYO VEDIA LIDIA","FERNANDEZ HERRERA YESSICA","FLORES BURGOS VIVIAN YESSIKA","FLORES SANDOVAL ELIZABETH","GARCIA FLORES JUAN JOSE","LOPEZ GONZALES DAIRA CELESTE","MENDOZA SANCHEZ ALEJANDRO JULIAN","MERCADO ZORRILLA VICTORIA","MOSCOSO TERAN DANIEL","PICON VARGAS LISBET","QUISPE TARDIO ANGEL DANIEL","QUITO ZARATE MARY LUZ","RIVERA ALMENDRAS ARIEL","RIVERA CACERES ANA ROSA","RIVERA HUAMANI LIZET","RODRIGUEZ CHURATA NILO SANTOS","ROJAS ALARCON MARIELA","RUIZ MOSCOSO ANGELES SUMAYA","SACACA VELASQUEZ PAOLA FERNANDA","SALVA MALDONADO HERNAN","SERRANO GARCIA YESSICA","SOLIZ GUIZADA MARCO ANTONIO","URQUIZU RODRIGUEZ JAEL YASMIN","ZEGARRA VALDA ERLINDA"],
+  "4to A": ["ALMENDRAS ROCHA JESICA","ARAMAYO PACO ROSALIA","ARAMAYO VARGAS JHONALD EDILSON","CABRERA VARGAS YHOEL","CARO CABRERA MARIO","CERON ARAMAYO LEODAN","CERON OCHOA MARIA ISABEL","GARCIA LOAYZA ORLANDO","LEON FERRUFINO HELEN VANET","LEON VELASQUEZ JOSE MANUEL","MARTINEZ RIVERA ARTHUR DAVID","NAVARRO PANIAGUA JOSE LEANDRO","NUÑEZ ARANCIBIA JHOSELIN","ORTEGA BARRIGA JIMENA","ORTEGA GALARZA JOSE XAVIER","ROJAS FLORES EVELIN","SAAVEDRA ARANCIBIA ELMER","SANDOVAL AGUILAR NELY","STROEBEL CACERES SUSAN NICOL","TURRIZAGA CONDORI MARIANA","VARGAS MERCADO IVER"],
+  "4to B": ["PORCEL SAMIRH FERNANDO","ALVIS ESPINOZA LOURDES","ARANCIBIA PAREDES JHOEL","BARRIGA ESTRADA ERLINDA","CASTRO SANDOVAL EDWIN","CEREZO LLANOS MARIANA","CERON PAREDES JUAN DAVID","CHAVEZ FLORES ALFREDO","ESPADA HERRERA ANA PAOLA","ESTRADA PAREDES DAVID","LOPEZ ARANCIBIA LUCIANA","MERCADO SANDOVAL DANIA","OCHOA PAREDES SANDRA","PADILLA RENGIPO DANIELA JHOSSETH","SEGARRA TERAN JARIS TIFANY","VELA COANQUI ELIZABETH","ZARATE SEGARRA JHAMIL","ZORRILLA SAAVEDRA ZACARIAS"],
+  "5to A": ["BAYA JOSE ALVARO","BARRIGA MERCADO SEBERINO","CALDERON GALARZA ALEXANDER","CASERES VARGAS NEISI","DURAN ALARCON ADRIANA","FLORES SANDOVAL JUAN BENITO","GARCIA CRUZ CRISTIAN","GUTIERREZ FLORES YILIAN SARA","GUTIERREZ TINUCO MAURICIO JHOEL","MENDOZA VILLARROEL ANGELA BELEN","NINA SANDOVAL ADRIEL FACUNDO","NUÑEZ AVALOS ERLINDA","OCHOA BARRIGA GETRUDES","OROSCO CALDERON JOSE ANDRES","OROSCO SARDAN HELEN ARIANA","PADILLA RENGIPO SONIA","PARACTA MAMANI JHON ALEX","QUISPE FLORES YOSELIN","ROCHA FLORES NAYDA LISET","ROSADO MEDINA DAYRA CAROLINA","SAAVEDRA ARANCIBIA JAIME","SARDAN PARACTA JOSUE ADAIR","SEGARRA FLORES ALVARO","SEGARRA ROMERO JOSE MARIA","TINUCO ARICOMA DANER","VARGAS PAREDES RUBEN"],
+  "5to B": ["NUÑEZ OLGA","AVENDAÑO RIVERA MILTON ABDON","CACERES ARANCIBIA LEONEL","CACERES FLORES LISBETH ROCIO","CERON ARAMAYO JOSE LUIS","CHOQUE CHILE YHOMAYRA","CONDORI MEZA CAMILA BRICEL","ESPINOZA TINUCO NELLY MAITE","FLORES PORCEL RUTH MARIANA","FLORES SANDOVAL DELINA","GARCIA MENDIETA NELY","HEREDIA PADILLA ELIZABETH","MARTINEZ MERIDA RODRIGO","MENDIETA APARICIO MIRTHA MAITE","MONTAÑO VELASQUEZ NELSON GAEL","MONTAÑO VELASQUEZ NELSON NOEL","PAREDES OROZCO DAMARIS","PAREDES TARDIO JHEISON DAVID","RENGIPO SERRUDO ANELY","RENTERIA ARANCIBIA BENITO","RIVERA HUAMANI DELIA","RODRIGUEZ ARAMAYO MABY LUCIANA","RODRIGUEZ CHURATA MARIBEL","SOLIZ GUIZADA JULIO CESAR","YALE CAYO ESTEFANY HELEN"],
+  "6to A": ["ARAMAYO PACO MARIBEL","AVALOS RODAS KEVIN","CARBALLO CONDORI PEDRO","CHAVEZ FLORES SEBASTIAN","ESTRADA GONZALES LEONIDAS","JIMENEZ ARAMAYO CLAUDIO","MAMANI GOMEZ BRISA JULIETA","MARIN ESPINOZA LIZ ALINA","MARIN ZEGARRA NICOL","MARTINEZ FLORES ALEX SANDRO","MERCADO VARGAS LUIS MARIO","OCHOA PAREDES MARITZA","PADILLA OVANDO GELVIN","PAREDES MARIN LIZETH","RENGIPO SIFUENTES JUAN CARLOS","SALAZAR DURAN JHOJANN ANICETO","VARGAS AGUILAR LUIS ARMANDO","VELA CONDORI ALEX ROLY"],
+  "6to B": ["FLORES GONZALES JHONNY","GONZALES ESTRADA MARIO","LAIRANA GONZALES LUCIA MARCIA","PADILLA CHURATA SERGIO","PINTO AVENDAÑO FABIANA","QUISPE CACERES ARIEL","RAMIREZ GODOY ROBERTO","RODAS CACERES NOELIA ELIZABETH","SAAVEDRA GARCIA SANTIAGO","SALAZAR QUISPE SAMUEL","SEGARRA ALVAREZ LAURA DENISSE","TERAN ALVAREZ FABIANA","VELA ZORRILLA LEYDI","VELA ZORRILLA DORIS","VILLARPANDO MELENDRES ANJHELINA EMILY","ZARATE RIVERA DELIA"]
+};
+
+const grados = [
+  { label: "Primero", fila: "fila-1", cursos: ["1ro A","1ro B","1ro C"] },
+  { label: "Segundo", fila: "fila-2", cursos: ["2do A","2do B","2do C"] },
+  { label: "Tercero", fila: "fila-3", cursos: ["3ro A","3ro B"] },
+  { label: "Cuarto",  fila: "fila-4", cursos: ["4to A","4to B"] },
+  { label: "Quinto",  fila: "fila-5", cursos: ["5to A","5to B"] },
+  { label: "Sexto",   fila: "fila-6", cursos: ["6to A","6to B"] }
+];
+
+const colores = {
+  "1": "#7B6CF6", "2": "#0EBF8A", "3": "#F26D3D",
+  "4": "#3A9BDC", "5": "#D4527D", "6": "#C78A1A"
+};
+
+let cursoActual = null;
+
+function init() {
+  let totalGlobal = 0;
+  grados.forEach(g => {
+    const fila = document.getElementById(g.fila);
+    const num = g.fila.replace('fila-','');
+    const color = colores[num];
+    g.cursos.forEach(c => {
+      const count = datos[c].length;
+      totalGlobal += count;
+      const btn = document.createElement('div');
+      btn.className = 'curso-card';
+      btn.innerHTML = `<div class="nombre">${c}</div><div class="cant">${count} estudiantes</div><span class="flecha">→</span>`;
+      btn.onclick = () => verCurso(c, color);
+      fila.appendChild(btn);
+    });
+  });
+  document.getElementById('total-global').textContent = `Total: ${totalGlobal} estudiantes registrados en ${Object.keys(datos).length} cursos`;
+}
+
+function verCurso(curso, color) {
+  cursoActual = curso;
+  const num = curso.charAt(0);
+  const c = color || colores[num] || '#888';
+
+  document.getElementById('vista-inicio').style.display = 'none';
+  document.getElementById('vista-detalle').style.display = 'block';
+  document.getElementById('vista-detalle').style.animation = 'none';
+  setTimeout(() => document.getElementById('vista-detalle').style.animation = '', 10);
+
+  const badge = document.getElementById('badge-curso');
+  badge.textContent = curso;
+  badge.style.background = c + '18';
+  badge.style.color = c;
+  badge.style.border = '1px solid ' + c + '40';
+
+  document.getElementById('titulo-detalle').textContent = 'Lista del curso ' + curso;
+  document.getElementById('total-detalle').textContent = datos[curso].length + ' estudiantes registrados';
+  document.getElementById('buscador').value = '';
+
+  document.getElementById('btn-volver').classList.add('visible');
+  renderLista(datos[curso]);
+}
+
+function renderLista(lista) {
+  const cont = document.getElementById('lista-alumnos');
+  if (!lista.length) {
+    cont.innerHTML = '<div class="sin-resultados">No se encontraron estudiantes con ese nombre.</div>';
+    return;
+  }
+  cont.innerHTML = lista.map((n, i) =>
+    `<div class="alumno-row"><span class="num">${i+1}</span><span class="nom">${n}</span></div>`
+  ).join('');
+}
+
+function filtrar(q) {
+  if (!cursoActual) return;
+  const r = datos[cursoActual].filter(n => n.toLowerCase().includes(q.toLowerCase().trim()));
+  renderLista(r);
+}
+
+function volverInicio() {
+  document.getElementById('vista-detalle').style.display = 'none';
+  document.getElementById('vista-inicio').style.display = 'block';
+  document.getElementById('btn-volver').classList.remove('visible');
+  cursoActual = null;
+}
+
+init();
+</script>
+</body>
+</html>
